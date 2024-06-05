@@ -12,7 +12,7 @@ const getData = async () => {
         const response = await fetch(url, options);
         const result = await response.json();
         const mainData = result.items
-        console.log(mainData);
+        console.log(mainData)
         mainData.map((res, index) => {
             document.querySelector('#result').innerHTML += `
             <h1><a href="${res.link}">${res.title}</a> </h1>
